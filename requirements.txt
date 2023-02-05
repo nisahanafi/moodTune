@@ -3,3 +3,4 @@ spotipy
 streamlit
 matplotlib
 opencv_python
+protobuf==3.20.1
