@@ -23,7 +23,7 @@ pred = st.container()
 confirm = st.container()
 
 def take_input():
-    video = cv2.VideoCapture(1) #0
+    video = cv2.VideoCapture(-1) #0
 
     while True:
         check, frame = video.read()
