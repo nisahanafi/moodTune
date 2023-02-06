@@ -22,6 +22,27 @@ inp = st.container()
 pred = st.container()
 confirm = st.container()
 
+def take_input():
+    video = cv2.VideoCapture(0) 
+
+    while True:
+        check, frame = video.read()
+        
+        cv2.imshow('cap', frame)
+        key = cv2.waitKey(1)
+    
+        if key == ord(' '): #changed to spacebar
+            break
+
+    
+    showPic = cv2.imwrite("your emotion.jpg",frame)
+    print(showPic)
+
+
+    
+    video.release()
+    cv2.destroyAllWindows()
+
 with header:
     st.image('background.jpg')
     st.title('Recommending Songs Based on Human Facial Expression and Emotion')
@@ -31,7 +52,7 @@ with inp:
     st.title("Firstly, Let's Capture Your Emotion") 
     st.markdown("**Capturing a picture of you now, press 'Spacebar' to take the picture**")
     faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
-    test.take_input() #sends input to another python file/module 'test.py', to run the take_input function in test.py
+    take_input() #sends input to another python file/module 'test.py', to run the take_input function in test.py
 
 with pred:
     st.image('your emotion.jpg')
