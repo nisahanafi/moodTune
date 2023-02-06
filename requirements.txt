@@ -2,6 +2,6 @@ deepface
 spotipy
 streamlit
 matplotlib
-opencv_python
+cv2
 protobuf == 3.20
 streamlit_webrtc 
