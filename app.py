@@ -26,7 +26,7 @@ def take_input():
     video = cv2.VideoCapture(0) #0
 
     while True:
-        check, frame = video.read()
+        _, frame = video.read()
         
         cv2.imshow('cap', frame)
         key = cv2.waitKey(1)
