@@ -6,7 +6,6 @@ import spotipy
 
 from spotipy.oauth2 import SpotifyClientCredentials
 import streamlit as st
-import test
 import random
 
 st.experimental_memo(suppress_st_warning= True)
