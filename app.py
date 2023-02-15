@@ -8,7 +8,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import streamlit as st
 import random
 
-st.experimental_memo(suppress_st_warning= True)
+#st.experimental_memo(suppress_st_warning= True)
 client_id = '1224aac3c7a44e6da69f8ce6d5cdea24' #my given client id from spotify for developers website
 client_secret = '41203fae0cb241b581752e5cf7fdc82d' #my client secret id from spotify for developers website
 
